@@ -58,6 +58,59 @@ ol.temas .tg{display:block;font-family:'Lora',Georgia,serif;font-style:italic;co
 .abs p{font-size:16.5px;margin-top:18px;color:var(--ink)}.abs p b{color:var(--title)}
 .hl{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}.hl .h{border:1px solid var(--rule);background:var(--card);padding:18px 20px}.hl .h b{font-family:'Poppins',Arial,sans-serif;color:var(--acc);font-weight:700;font-size:13px;display:block;margin-bottom:6px}.hl .h span{font-size:14.5px;color:var(--ink)}@media(max-width:700px){.hl{grid-template-columns:1fr}}
 ul.dir{list-style:none;margin-top:24px}ul.dir li{padding:10px 0 10px 26px;position:relative;font-size:15.5px;border-bottom:1px solid var(--rule)}ul.dir li::before{content:"";position:absolute;left:2px;top:19px;width:8px;height:8px;background:var(--acc);border-radius:50%}
+</style>
+<style>
+/* ==== Temario de composicion MLC ==== */
+.mx-fase{font-family:'Poppins',Arial,sans-serif;font-size:11.5px;font-weight:600;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--acc);margin:30px 0 14px;
+  padding-top:8px}
+.mx-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.mx-grid{grid-template-columns:1fr}}
+.mx-mod{display:flex;gap:13px;align-items:flex-start;text-decoration:none;
+  background:rgba(255,255,255,.035);border:1px solid rgba(77,208,196,.16);
+  border-radius:12px;padding:15px 16px;transition:border-color .18s,transform .18s}
+.mx-mod:hover{border-color:rgba(77,208,196,.55);transform:translateY(-2px)}
+.mx-n{flex:none;font-family:'Poppins',Arial,sans-serif;font-weight:700;font-size:12px;
+  letter-spacing:.06em;color:#06282A;background:var(--acc);border-radius:7px;padding:4px 9px;margin-top:2px}
+.mx-body{display:flex;flex-direction:column;gap:5px;min-width:0}
+.mx-t{font-family:'Poppins',Arial,sans-serif;font-size:15px;font-weight:600;color:var(--title);line-height:1.35}
+.mx-m{font-size:12.5px;color:var(--soft);line-height:1.5}
+.mx-cap{font-size:12.5px;color:var(--ink);line-height:1.5}
+.mx-go{font-family:'Poppins',Arial,sans-serif;font-size:10.5px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-top:2px}
+.mx-vwrap{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.mx-vwrap{grid-template-columns:1fr}}
+.mx-vert{display:flex;flex-direction:column;gap:6px;text-decoration:none;
+  background:linear-gradient(160deg,rgba(77,208,196,.10),rgba(18,112,126,.05));
+  border:1px solid rgba(77,208,196,.30);border-radius:12px;padding:16px 17px;
+  transition:border-color .18s,transform .18s}
+.mx-vert:hover{border-color:rgba(77,208,196,.65);transform:translateY(-2px)}
+.mx-vk{font-family:'Poppins',Arial,sans-serif;font-size:10.5px;font-weight:700;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--acc)}
+.mx-vt{font-family:'Poppins',Arial,sans-serif;font-size:16px;font-weight:700;color:var(--title);line-height:1.3}
+.mx-vm{font-size:12.5px;color:var(--soft);line-height:1.55}
+.mx-x{margin-top:6px}
+.mx-obj{font-size:15.5px;line-height:1.7;color:var(--ink);max-width:860px;margin:0 0 22px}
+.mx-vgrid{display:grid;grid-template-columns:1.5fr 1fr;gap:24px}
+@media(max-width:820px){.mx-vgrid{grid-template-columns:1fr}}
+.mx-mats{display:flex;flex-direction:column;gap:14px}
+.mx-mat{background:rgba(255,255,255,.035);border:1px solid rgba(77,208,196,.16);
+  border-radius:12px;padding:15px 17px}
+.mx-mat-h{font-family:'Poppins',Arial,sans-serif;font-size:14.5px;font-weight:600;
+  color:var(--title);margin-bottom:9px}
+.mx-ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+.mx-ul li{font-size:13.5px;line-height:1.6;color:var(--ink);padding-left:16px;position:relative}
+.mx-ul li:before{content:"\00b7";position:absolute;left:2px;color:var(--acc);font-weight:700}
+.mx-lado{display:flex;flex-direction:column;gap:13px}
+.mx-capbox{background:linear-gradient(160deg,rgba(77,208,196,.14),rgba(18,112,126,.05));
+  border:1px solid rgba(77,208,196,.35);border-radius:12px;padding:15px 17px}
+.mx-capk{font-family:'Poppins',Arial,sans-serif;font-size:10.5px;font-weight:700;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--acc);margin-bottom:7px}
+.mx-capbox p{font-size:13.5px;line-height:1.65;color:var(--ink);margin:0}
+.mx-meta{background:rgba(255,255,255,.035);border:1px solid rgba(234,228,218,.10);
+  border-radius:10px;padding:13px 15px;font-size:13px;line-height:1.65;color:var(--soft)}
+.mx-meta b{display:block;font-family:'Poppins',Arial,sans-serif;font-size:10.5px;
+  font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin-bottom:5px}
 </style></head><body>
 <header class="hero">
  <div class="serie">RiskMathics AI Academy · Machine Learner Certification™</div>
@@ -84,10 +137,8 @@ ul.dir{list-style:none;margin-top:24px}ul.dir li{padding:10px 0 10px 26px;positi
 
 <section class="sec" id="temario"><div class="wrap">
  <div class="kicker">Temario</div><h2 class="sec-title">Qu&eacute; vas a dominar.</h2>
- <p class="sec-sub">Arquitectura progresiva: Learn → Apply → Create → Profit.</p>
- <ol class="temas">
-  <li>Temario completo por correo al registrarte.</li>
- </ol>
+ <p class="sec-sub">El Core completo (14 módulos, 452 horas) más la vertical Deep Tech, Quantum &amp; Nanotechnology.</p>
+ <div class="mx-fase">Nivel 1 · Foundations · Learn</div><div class="mx-grid"><a class="mx-mod" href="https://matematicasml.riskmathicslabs.com/#temario"><span class="mx-n">C1</span><span class="mx-body"><b class="mx-t">Matemáticas para ML</b><span class="mx-m">40 h · 5 semanas · 13 clases · inicia 3 Nov 2026</span><span class="mx-cap">Capstone: &ldquo;Optimizer From Scratch&rdquo;</span><span class="mx-go">Ver temario completo</span></span></a><a class="mx-mod" href="https://pythonia.riskmathicslabs.com/#temario"><span class="mx-n">C2</span><span class="mx-body"><b class="mx-t">Python, Datos &amp; Fundamentos Técnicos de IA</b><span class="mx-m">32 h · 4 semanas · 11 clases · inicia 1 Dic 2026</span><span class="mx-cap">Capstone: &ldquo;AI Fundamentals Explainer&rdquo;</span><span class="mx-go">Ver temario completo</span></span></a><a class="mx-mod" href="https://bayesianml.riskmathicslabs.com/#temario"><span class="mx-n">C3</span><span class="mx-body"><b class="mx-t">Probabilistic &amp; Bayesian ML + Causal Inference</b><span class="mx-m">32 h · 4 semanas · 11 clases · inicia 2 Feb 2027</span><span class="mx-cap">Capstone: &ldquo;Causal Risk Estimator&rdquo;</span><span class="mx-go">Ver temario completo</span></span></a><a class="mx-mod" href="https://mlclasico.riskmathicslabs.com/#temario"><span class="mx-n">C4</span><span class="mx-body"><b class="mx-t">ML Clásico · Supervisado &amp; No Supervisado</b><span class="mx-m">40 h · 5 semanas · 13 clases · inicia 25 Feb 2027</span><span class="mx-cap">Capstone: &ldquo;Tabular ML Pro&rdquo;</span><span class="mx-go">Ver temario completo</span></span></a></div><div class="mx-fase">Nivel 2 · Deep &amp; Generative · Apply</div><div class="mx-grid"><a class="mx-mod" href="https://deeplearning.riskmathicslabs.com/#temario"><span class="mx-n">C5</span><span class="mx-body"><b class="mx-t">Deep Learning Foundations</b><span class="mx-m">36 h · 5 semanas · 12 clases · inicia 19 Abr 2027</span><span class="mx-cap">Capstone: &ldquo;Neural Net From Scratch PyTorch&rdquo;</span><span class="mx-go">Ver temario completo</span></span></a><a class="mx-mod" href="https://multimodalai.riskmathicslabs.com/#temario"><span class="mx-n">C6</span><span class="mx-body"><b class="mx-t">Multimodal &amp; Generative Media</b><span class="mx-m">32 h · 4 semanas · 11 clases · inicia 11 May 2027</span><span class="mx-cap">Capstone: &ldquo;Multimodal Intelligence&rdquo;</span><span class="mx-go">Ver temario completo</span></span></a><a class="mx-mod" href="https://nlptransformers.riskmathicslabs.com/#temario"><span class="mx-n">C7</span><span class="mx-body"><b class="mx-t">NLP, Transformers &amp; LLMs</b><span class="mx-m">36 h · 5 semanas · 12 clases · inicia 3 Jun 2027</span><span class="mx-cap">Capstone: &ldquo;Financial Language Engine&rdquo;</span><span class="mx-go">Ver temario completo</span></span></a><a class="mx-mod" href="https://finetuning.riskmathicslabs.com/#temario"><span class="mx-n">C8</span><span class="mx-body"><b class="mx-t">Fine-Tuning, RLHF &amp; Prompt Engineering</b><span class="mx-m">32 h · 4 semanas · 11 clases · inicia 5 Jul 2027</span><span class="mx-cap">Capstone: &ldquo;Domain LLM&rdquo;</span><span class="mx-go">Ver temario completo</span></span></a></div><div class="mx-fase">Nivel 3 · Frontier AI Engineering · Create</div><div class="mx-grid"><a class="mx-mod" href="https://iaagentica.riskmathicslabs.com/#temario"><span class="mx-n">C9</span><span class="mx-body"><b class="mx-t">IA Agéntica, RAG, MCP &amp; Multi-Agent Systems</b><span class="mx-m">36 h · 5 semanas · 12 clases · inicia 27 Jul 2027</span><span class="mx-cap">Capstone: &ldquo;Agentic System&rdquo;</span><span class="mx-go">Ver temario completo</span></span></a><a class="mx-mod" href="https://reasoningmodels.riskmathicslabs.com/#temario"><span class="mx-n">C10</span><span class="mx-body"><b class="mx-t">Reasoning Models &amp; Reinforcement Learning</b><span class="mx-m">28 h · 4 semanas · 9 clases · inicia 19 Ago 2027</span><span class="mx-cap">Capstone: &ldquo;Reasoning/RL Agent&rdquo;</span><span class="mx-go">Ver temario completo</span></span></a><a class="mx-mod" href="https://scalingai.riskmathicslabs.com/#temario"><span class="mx-n">C11</span><span class="mx-body"><b class="mx-t">Scaling, Distributed Training &amp; Inference Optimization</b><span class="mx-m">28 h · 4 semanas · 9 clases · inicia 20 Sep 2027</span><span class="mx-cap">Capstone: &ldquo;Efficient Serving&rdquo;</span><span class="mx-go">Ver temario completo</span></span></a><a class="mx-mod" href="https://datacentricai.riskmathicslabs.com/#temario"><span class="mx-n">C12</span><span class="mx-body"><b class="mx-t">Data-Centric AI</b><span class="mx-m">24 h · 3 semanas · 8 clases · inicia 7 Oct 2027</span><span class="mx-cap">Capstone: &ldquo;Data-Centric Uplift&rdquo;</span><span class="mx-go">Ver temario completo</span></span></a><a class="mx-mod" href="https://aisafety.riskmathicslabs.com/#temario"><span class="mx-n">C13</span><span class="mx-body"><b class="mx-t">AI Safety, Interpretability, Evals &amp; Red-Teaming</b><span class="mx-m">28 h · 4 semanas · 9 clases · inicia 23 Oct 2027</span><span class="mx-cap">Capstone: &ldquo;Safety Audit&rdquo;</span><span class="mx-go">Ver temario completo</span></span></a><a class="mx-mod" href="https://mlops.riskmathicslabs.com/#temario"><span class="mx-n">C14</span><span class="mx-body"><b class="mx-t">MLOps, LLMOps &amp; Production Systems</b><span class="mx-m">28 h · 4 semanas · 9 clases · inicia 22 Nov 2027</span><span class="mx-cap">Capstone: &ldquo;Model to Production&rdquo;</span><span class="mx-go">Ver temario completo</span></span></a></div><div class="mx-fase">Tu vertical de especialización</div><div class="mx-vwrap"><a class="mx-vert" href="https://mlcv4.riskmathicslabs.com/"><span class="mx-vk">V4 · 2 materias · 60 h · 20 clases</span><b class="mx-vt">Deep Tech, Quantum &amp; Nanotechnology</b><span class="mx-vm">Quantum Computing &amp; Quantum ML · Nanotechnology &amp; Deep Tech</span><span class="mx-go">Ver la vertical</span></a></div>
 </div></section>
 
 <section class="sec"><div class="wrap">
